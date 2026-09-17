@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+.priority {
+  font-weight: bold;
+}
+
+.priority.high {
+  background-color: #c0392b;
+  color: white;
+}
+
+.priority.medium {
+  background-color: #d4af37;
+  color: #3b2f2f;
+}
+
+.priority.low {
+  background-color: #6b8e23;
+  color: white;
+}
+
+body {
+  margin: 0;
+  background-color: #eee8d5;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #3b2f2f;
+  color: #d4af37;
+  padding: 20px;
+}
+
+main {
+  padding: 30px;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+}
+
+.board section {
+  flex: 1;
+  background-color: #d9d0b8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.board section h2 {
+  color: #3b2f2f;
+}
+
+.task-card {
+  background-color: #fffaf0;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #8b7355;
+}
+
+.category,
+.priority {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.category {
+  border: 1px solid #2e7d32;
+  color: #2e7d32;
+  background-color: transparent;
+}
